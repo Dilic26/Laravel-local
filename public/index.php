@@ -56,6 +56,3 @@ $response = $kernel->handle(
 $response->send();
 
 $kernel->terminate($request, $response);
-
-
-//Difference from the original
