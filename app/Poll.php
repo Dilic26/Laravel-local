@@ -6,15 +6,10 @@ use Illuminate\Database\Eloquent\Model;
 
 class Poll extends Model
 {
-    protected $question = '';
-    protected $answer = '';
-    protected $answers = [];
+    protected $fillable = [
 
-    public function getAnswers(){
-        $answer = $this->answer;
-        $answers = $this->answers;
-        $answers[] = $answer;
-        $this->answers = $answers;
-        return $this->answers;
-}
+        'question',
+        'answers'
+
+    ];
 }
