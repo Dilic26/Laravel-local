@@ -13,4 +13,6 @@ class Vote extends Model
         'pollId'
 
     ];
+
+    public $timestamps = false;
 }

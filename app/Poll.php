@@ -9,7 +9,14 @@ class Poll extends Model
     protected $fillable = [
 
         'question',
-        'answers'
+        'answer1',
+        'answer2',
+        'answer3',
+        'answer4',
+        'answer5'
 
     ];
+
+    public $timestamps = false;
+
 }
